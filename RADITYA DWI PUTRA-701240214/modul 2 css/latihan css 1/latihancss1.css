@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Header - Sisi Atas */
+.sisi-atas {
+    background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+    border: 3px solid #000;
+    border-radius: 15px 15px 0 0;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sisi-atas h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Main Content Area */
+.main-content {
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    background-color: #87CEEB;
+    padding: 10px;
+    overflow: hidden; /* Alternative clearfix */
+}
+
+/* Sisi Kiri */
+.sisi-kiri {
+    width: 30%;
+    float: left;
+    background-color: #FFD700;
+    border: 3px dashed #FF0000;
+    margin-right: 2%;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 150px;
+}
+
+/* Sisi Tengah */
+.sisi-tengah {
+    width: 36%;
+    float: left;
+    background-color: #FFD700;
+    border: 3px dotted #0000FF;
+    margin-right: 2%;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 150px;
+}
+
+/* Sisi Kanan */
+.sisi-kanan {
+    width: 30%;
+    float: left;
+    background-color: #FFD700;
+    border: 3px dashed #FF0000;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 150px;
+}
+
+.sisi-kiri h2, .sisi-tengah h2, .sisi-kanan h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Clearfix */
+.clearfix {
+    clear: both;
+}
+
+/* Footer - Sisi Bawah */
+.sisi-bawah {
+    background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+    border: 3px solid #000;
+    border-radius: 0 0 15px 15px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sisi-bawah h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+    .sisi-kiri, .sisi-tengah, .sisi-kanan {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .sisi-tengah {
+        margin-bottom: 10px;
+    }
+}
